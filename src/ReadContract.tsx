@@ -17,13 +17,13 @@ function ReadContract() {
             abi,
             address: '0xeFF3882b6c20f0EBD975a89c2698e56769f8d86c',
             functionName: 'totalSupply',
-        },
-            {
-                ...abi,
-                address: '0xeFF3882b6c20f0EBD975a89c2698e56769f8d86c',
-                functionName: 'ownerOf',
-                // args: [69n],
-            },
+        }
+            // {
+            //     ...abi,
+            //     address: '0xeFF3882b6c20f0EBD975a89c2698e56769f8d86c',
+            //     functionName: 'ownerOf',
+            //     // args: [69n],
+            // },
 
         ]
 
@@ -35,7 +35,7 @@ function ReadContract() {
     //     functionName: 'balanceOf',
     //     args: [address],
     // })
-    const [balance, totalSupply, owner] = data || []
+    const [balance, totalSupply] = data || []
     console.log(data)
     console.log(isError)
     console.log(error)
@@ -61,7 +61,7 @@ function ReadContract() {
             }
             {isSuccess && <p>Balance: {balance?.result?.toString()}</p>}
             {isSuccess && <p>Total Supply: {totalSupply?.result?.toString()}</p>}
-            {isSuccess && <p>Owner : {owner?.result?.toString()}</p>}
+            {/* {isSuccess && <p>Owner : {owner?.result?.toString()}</p>} */}
         </div>
     )
 }

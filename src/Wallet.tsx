@@ -1,4 +1,4 @@
-import { useAccount, useBalance, useConnect, useDisconnect, useEnsAvatar, useEnsName } from 'wagmi';
+import { useAccount, useBalance, useConnect, useDisconnect } from 'wagmi';
 import { formatUnits } from 'viem';
 
 function Wallet() {

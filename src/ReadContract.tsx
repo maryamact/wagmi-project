@@ -1,5 +1,5 @@
 
-import { useReadContract, useReadContracts, type BaseError } from 'wagmi'
+import { useReadContracts, type BaseError } from 'wagmi'
 import { abi } from './abi'
 import { useState } from 'react';
 
